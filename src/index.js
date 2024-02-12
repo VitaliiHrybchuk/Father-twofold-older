@@ -1,5 +1,11 @@
 'use strict';
-
+/**
+ * 
+ * @param {number} fathersAge Возраст отца
+ * @param {number} sonsAge Возраст сына
+ * @returns {string} Через сколько лет (или сколько лет назад)
+    отец будет (или был) вдвое старше сына
+ */
 function calcFatherTwiceOlder(fathersAge, sonsAge) {
   // let years = 0;
   if (fathersAge - sonsAge < 15 || sonsAge < 0) {
