@@ -11,13 +11,10 @@ function calcFatherTwiceOlder(fathersAge, sonsAge) {
   if (fathersAge - sonsAge < 15 || sonsAge < 0) {
     return 'Entered wrong information';
   }
-  // if (fathersAge / 2 === sonsAge){
-  //   return years;
-
   return fathersAge / sonsAge === 2 ? 0 : fathersAge - sonsAge * 2;
 }
 const fathersAge = 99;
-const sonsAge = 1;
+const sonsAge = 98;
 const res = calcFatherTwiceOlder(fathersAge, sonsAge);
 
 let strYear;
@@ -39,4 +36,3 @@ if (res < 0) {
 } else {
   console.log(`Отец сейчас в два раза старше сына`);
 }
-console.log(calcFatherTwiceOlder());
